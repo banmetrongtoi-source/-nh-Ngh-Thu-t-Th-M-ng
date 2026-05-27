@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ảnh Nghệ Thuật Thơ Mộng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-image: linear-gradient(rgba(255, 242, 245, 0.85), rgba(243, 241, 255, 0.85)), url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1600&dpr=2');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .font-artistic {
+        font-family: 'Cormorant Garamond', serif;
+      }
+      @keyframes pulse-gift {
+        0%, 100% {
+          transform: scale(1);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 105, 180, 0.4);
+        }
+        50% {
+          transform: scale(1.05);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 105, 180, 0.8);
+        }
+      }
+      .animate-pulse-gift {
+        animation: pulse-gift 1.5s infinite;
+      }
+      @keyframes super-pulse-border {
+        0% { border-color: #ef4444; box-shadow: 0 0 15px #ef4444; } /* red-500 */
+        25% { border-color: #ec4899; box-shadow: 0 0 20px #ec4899; } /* pink-500 */
+        50% { border-color: #a855f7; box-shadow: 0 0 25px #a855f7; } /* purple-500 */
+        75% { border-color: #facc15; box-shadow: 0 0 20px #facc15; } /* yellow-400 */
+        100% { border-color: #ef4444; box-shadow: 0 0 15px #ef4444; } /* red-500 */
+      }
+      .animate-super-pulse-border {
+        animation: super-pulse-border 2s infinite linear;
+      }
+       @keyframes selected-glow {
+        0%, 100% {
+          box-shadow: 0 0 8px rgba(239, 68, 68, 0.6), 0 0 12px rgba(239, 68, 68, 0.4);
+        }
+        50% {
+          box-shadow: 0 0 16px rgba(239, 68, 68, 0.9), 0 0 24px rgba(239, 68, 68, 0.6);
+        }
+      }
+      .animate-selected-glow {
+        animation: selected-glow 2s infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
